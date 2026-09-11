@@ -218,7 +218,7 @@ export default function App() {
                   rel="noopener noreferrer"
                   className="break-all text-accent-green hover:underline"
                 >
-                  github.com/{profile.github}
+                  https://github.com/{profile.github}
                 </a>
               </div>
               <div className="flex flex-col items-center gap-1 text-center">
