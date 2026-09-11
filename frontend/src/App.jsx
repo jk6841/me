@@ -6,6 +6,7 @@ const profile = {
   email: 'junki.yun@kaist.ac.kr',
   instagram: 'jun96ki',
   github: 'jk6841',
+  interests: ['💪 헬스', '🎵 음악', '🍳 요리', '🎤 아이돌', '⚽ 호날두', '🥗 다이어트'],
 }
 
 function generateVCardQR() {
@@ -31,6 +32,14 @@ export default function App() {
         <section className="profile">
           <h2 className="name">{profile.name}</h2>
           <p className="major">{profile.major}</p>
+
+          <div className="interests">
+            {profile.interests.map((interest) => (
+              <span key={interest} className="interest-tag">
+                {interest}
+              </span>
+            ))}
+          </div>
 
           <div className="info">
             <div className="info-item">
