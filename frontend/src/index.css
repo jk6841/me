@@ -1,41 +1,141 @@
 :root {
-  font-family: system-ui, -apple-system, sans-serif;
-  line-height: 1.5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
   font-weight: 400;
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --primary: #3b82f6;
+  --primary-light: #dbeafe;
+  --text-primary: rgba(255, 255, 255, 0.87);
+  --text-secondary: rgba(255, 255, 255, 0.6);
+  --bg-primary: #1f2937;
+  --bg-secondary: #111827;
+  --border: #374151;
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    --text-primary: #1f2937;
+    --text-secondary: #6b7280;
+    --bg-primary: #ffffff;
+    --bg-secondary: #f9fafb;
+    --primary-light: #dbeafe;
+    --border: #e5e7eb;
   }
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  padding: 2rem;
+  padding: 1rem;
   min-width: 320px;
   min-height: 100vh;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
 }
 
 .app {
-  max-width: 1200px;
+  max-width: 600px;
   margin: 0 auto;
 }
 
 header {
   text-align: center;
   margin-bottom: 2rem;
+  padding: 2rem 0 1rem;
 }
 
 h1 {
   margin: 0;
   font-size: 2.5rem;
+  line-height: 1.2;
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.profile {
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
   padding: 2rem;
+  border: 1px solid var(--border);
+}
+
+.profile .name {
+  font-size: 1.875rem;
+  margin: 0 0 0.5rem;
+  color: var(--text-primary);
+}
+
+.profile .major {
+  margin: 0 0 1.5rem;
+  color: var(--primary);
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-item .label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.info-item a {
+  color: var(--primary);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+.info-item a:hover {
+  text-decoration: underline;
+}
+
+.qr-section {
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.qr-section h3 {
+  margin: 0 0 1.5rem;
+  font-size: 1.25rem;
+}
+
+.qr-container {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  background-color: var(--bg-primary);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border);
+}
+
+.qr-container canvas {
+  display: block;
+}
+
+.qr-hint {
+  margin: 0;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
 }
