@@ -10,3 +10,4 @@ __pycache__/
 *$py.class
 .ruff_cache/
 .pytest_cache/
+.idea
