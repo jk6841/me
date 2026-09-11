@@ -5,6 +5,7 @@ const profile = {
   major: 'MFE 26',
   email: 'junki.yun@kaist.ac.kr',
   instagram: 'jun96ki',
+  github: 'jk6841',
 }
 
 function generateVCardQR() {
@@ -35,6 +36,16 @@ export default function App() {
             <div className="info-item">
               <span className="label">📧 Email</span>
               <a href={`mailto:${profile.email}`}>{profile.email}</a>
+            </div>
+            <div className="info-item">
+              <span className="label">💻 GitHub</span>
+              <a
+                href={`https://github.com/${profile.github}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                github.com/{profile.github}
+              </a>
             </div>
             <div className="info-item">
               <span className="label">📱 Instagram</span>
