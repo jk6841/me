@@ -1,14 +1,15 @@
+import os
+
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
 app = FastAPI()
 
-# ── CORS: 프론트(5173)에서 백엔드(8000) 호출을 허용 ──
-origins = ["http://localhost:5173"]
+FE_URL = os.getenv("FE_URL", "http://localhost:5173")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=[FE_URL],
     allow_credentials=True,
     allow_methods=["*"],  # GET, POST, DELETE 등 모두 허용
     allow_headers=["*"],
