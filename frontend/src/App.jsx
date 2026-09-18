@@ -16,14 +16,12 @@ const interestCategories = [
     items: [
       {
         label: '달걀',
-        image:
-          'https://i.namu.wiki/i/WxUUEpbiRMWJgTjZCVuneM4BviNZe1XEs0kfxswDdYe0Mapp_k-xo347fxdJ_j4OoqGVDLdIH-nLgzcuRYpq10t7xCUcMK5ur4a6IbkX-tK5JuRbYjwF6QxPKZ42ApeCz9PMQyakr2A5aKwiG8O2ig.webp',
+        image: '/interests/egg.webp',
         emoji: '🥚',
       },
       {
         label: '삼겹살',
-        image:
-          'https://i.namu.wiki/i/cnxMxdL53udvyransvaTYrlTkJqQHcXX-ae9aTVNkyEiebmnP0SI6-9Xsp7Es5r3JkwpdeoVWoCyn5D-hKR7nCZ8hl3PnFrZPnfEoA4PhHCF_8-eAEzJqbikpAtrsByZnUjFxhQ0TCgKWXp-KVeHCQ.webp',
+        image: '/interests/samgyeopsal.webp',
         emoji: '🥓',
       },
     ],
@@ -33,13 +31,12 @@ const interestCategories = [
     items: [
       {
         label: '헬스 기구',
-        image:
-          'https://i.namu.wiki/i/06lgUlsOFjPBZLaif8i-BaOTondntugQ3YWazwq4Ae5E1p8EcbPPM5wAiCsTLeTcO_ugTnpY4OrUrzg5BrDQtcoOAo0t_phLKXvBvS9naESUdcaxLfwtlV0irfbPk2zUH8YbsV7zNeQaZ7hm5ZwN0w.webp',
+        image: '/interests/health.webp',
         emoji: '🏋️',
       },
       {
         label: '호날두',
-        image: 'https://dimg.donga.com/wps/NEWS/IMAGE/2021/01/05/104767925.1.jpg',
+        image: '/interests/ronaldo.jpg',
         emoji: '⚽',
       },
     ],
@@ -57,14 +54,12 @@ const interestCategories = [
     items: [
       {
         label: '신용재',
-        image:
-          'https://i.namu.wiki/i/XOJXsCc1NSRhEd0nz5YMq6zd_9CPbuF3t-_aebFTWTWbuXlLV6xc2MSkfsosrXgo9YXuWpRfBdSUgw2fvtcwMhvkuCGMhZb0xi-s2dI-3-uwJdhEjo-PNvbqtp2tHqQAAyUTQOBrXvC-GVPPVF6Asg.webp',
+        image: '/interests/shin_youngjae.webp',
         emoji: '🎵',
       },
       {
         label: '전상근',
-        image:
-          'https://i.namu.wiki/i/4dusb-8uN8HDqXlK-b0ljA6ZGtEwr8E0du81ftT-EA52MYSTVY2ONZNsxKfPVpV5v_S5q1vCMEUEKaFOkhUTJ3xNt-xj9RZ_lUh9XYGVDH8w5SUtpm18RCf4ikRMbp4uHfYYGbO1vpmot1h3pTxflg.webp',
+        image: '/interests/jeon_sangkeun.webp',
         emoji: '🎵',
       },
     ],
@@ -74,20 +69,17 @@ const interestCategories = [
     items: [
       {
         label: '송하영',
-        image:
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPOnfng2OM9q5DRg_BMssnkYJg04NjN1za5C4gmbaljShytU-I16nOIEg&s=10',
+        image: '/interests/song_hayoung.jpg',
         emoji: '🎤',
       },
       {
         label: '닝닝',
-        image:
-          'https://i.namu.wiki/i/KS_zBM0k1HQ6JCWBhfSr4JXv9YEwjfny-juACOK_i-SDcnkQ2yjlZ7H1zfp8WEGdUj4qG7E27rirCpcgMDY0B9QDAewaHm97Ee8AENrTy1J7Az-f8URpLhVwo-LDEfuLthoBPu7XXO9AwOeWWSX5LA.webp',
+        image: '/interests/ningning.webp',
         emoji: '🎤',
       },
       {
         label: '유하',
-        image:
-          'https://i.namu.wiki/i/AWEbODuDVjhp0ZHwYAvU2ONz6J6sAQGTRcO3AShmYaSbeIHUelZpfoH6JZQbGO4gzJbjrNaFY3Deh0W9KEryrb8xFjBXRFiba6CJZUCGs5a4aM1Zrgb9TIjQyN9jE6sW9AckIehHaJcDeBM06nS5dA.webp',
+        image: '/interests/yuha.webp',
         emoji: '🎤',
       },
     ],
