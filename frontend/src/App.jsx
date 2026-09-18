@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import QRCode from 'qrcode.react'
 
 const profile = {
@@ -182,6 +183,14 @@ export default function App() {
   return (
     <div className="min-h-screen bg-cream px-4 py-12 sm:px-8 lg:px-16">
       <div className="mx-auto max-w-4xl">
+        <div className="mb-6 flex justify-end">
+          <Link
+            to="/memo"
+            className="rounded-card bg-starbucks-green px-4 py-2 text-sm font-semibold tracking-sb text-white shadow-card transition hover:opacity-90"
+          >
+            메모장
+          </Link>
+        </div>
         <main className="flex flex-col gap-10">
           <section
             ref={profileRef}
