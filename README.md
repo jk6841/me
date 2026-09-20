@@ -34,3 +34,5 @@ cd backend
 uv sync
 uv run fastapi dev main.py
 ```
+
+Swagger UI: http://localhost:8000/docs
